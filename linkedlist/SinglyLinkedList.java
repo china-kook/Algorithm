@@ -1,7 +1,8 @@
 package linkedlist;
 
 /**
- * SinglyLinkedList 单链表的插入、删除、查找操作  > 注：链表中的数据为 int 类型         
+ * SinglyLinkedList 单链表的插入、删除、查找操作  
+ * > 注：链表中的数据为 int 类型         
  * 
  * @author ikook
  */
