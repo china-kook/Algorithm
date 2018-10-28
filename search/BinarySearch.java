@@ -32,6 +32,12 @@ public class BinarySearch {
         return -1;
     }
 
+    /**
+     * 递归实现
+     * @param arr
+     * @param value
+     * @return
+     */
     public static int bsearchToRecursive(int[] arr, int value) {
         int low = 0;
         int high = arr.length - 1;
