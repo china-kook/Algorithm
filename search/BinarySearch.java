@@ -123,4 +123,33 @@ public class BinarySearch {
         return -1;
     }
 
+    /**
+     * 变体二：查找最后一个值等于给定值的元素
+     * 
+     * @param arr
+     * @param value
+     * @return
+     */
+    public static int bsearchToVariant2(int[] arr, int value) {
+        int low = 0;
+        int high = arr.length - 1;
+
+        while (low <= high) {
+            int mid = low + ((high - low) >> 1);
+            if (arr[mid] > value) {
+                high = mid - 1;
+            } else if (arr[mid] < value) {
+                low = mid + 1;
+            } else {
+                if ((mid == n - 1) || (arr[mid + 1] != value)) {
+                    return mid;
+                } else {
+                    low = mid + 1;
+                }
+            }
+        }
+
+        return -1;
+    }
+
 }
